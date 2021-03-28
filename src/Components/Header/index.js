@@ -1,14 +1,24 @@
-import React from 'react';
+import classNames from 'classnames';
 import {ReactComponent as Logo} from 'assets/images/logo.svg';
+import styles from './styles.module.scss';
 
 const Header = () => {
   return (
-    <div className="row justify-content-between">
-      <div className="col-auto">
-        <Logo />
+    <>
+      <div className={classNames('content', styles.container)}>
+        <div className="container-fluid">
+          <div className="row justify-content-between align-items-center">
+            <div className="col-auto">
+              <Logo />
+            </div>
+            <div className="col-auto">
+              <button type="button" className={styles.btn}>Download</button>
+            </div>
+          </div>
+        </div>
       </div>
-      <div className="col-auto"></div>
-    </div>
+      <hr className={styles.hr}/>
+    </>
   );
 };
 
