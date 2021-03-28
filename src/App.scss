@@ -13,3 +13,34 @@ body {
 .colored-layout {
   background-color: $Porcelain;
 }
+
+.header-title {
+  font-size: 60px;
+  font-weight: bold;
+  color: $MineShaft;
+  margin-top: 15px;
+  margin-bottom: 0;
+}
+
+.header-info {
+  font-size: 14px;
+  font-weight: 500;
+  color: $Waterloo;
+  letter-spacing: 7.88px;
+  margin-top: 88px;
+}
+
+.header-desc {
+  font-size: 16px;
+  line-height: 1.88;
+  color: $Mako;
+  margin-top: 11px;
+  margin-bottom: 0;
+  padding: 0 100px;
+}
+
+.header-shot {
+  width: 100%;
+  height: auto;
+  margin-top: 73px;
+}
