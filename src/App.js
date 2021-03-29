@@ -23,7 +23,7 @@ function App() {
       </header>
       <div className="layout content">
         <div className="row justify-content-center">
-          <div className="col-8 text-center">
+          <div className="col-xl-8 col-lg-9 col-md-10 col-sm-11 col-11 text-center">
             <div className="header-info">Conflux wallet</div>
             <h1 className="header-title">Powerful and simple Conflux desktop wallet</h1>
             <p className="header-desc">Flox is an open-source desktop wallet that allows you to manage your assets on the Conflux network.</p>
@@ -35,7 +35,7 @@ function App() {
         <h3 className="feature-title">Our features</h3>
         <div className="row">
           {features.map((feature, index) => (
-            <div className="col-4 feature-col" key={index}>
+            <div className="col-lg-4 col-md-6  col-sm-12 col-12 feature-col" key={index}>
               <Feature data={feature} />
             </div>
           ))}

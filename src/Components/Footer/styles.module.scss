@@ -10,6 +10,7 @@
   align-items: center;
   font-size: 16px;
   color: $SpunPearl;
+  white-space: nowrap;
 }
 
 .line {
@@ -28,8 +29,23 @@
 .social {
   display: flex;
   align-items: center;
+  justify-content: flex-end;
 
-  a {
+  a:not(:first-child) {
     margin-left: 24px;
+  }
+}
+
+@media (max-width: $md) {
+  .info {
+    font-size: 14px;
+  }
+
+  .logo {
+    width: 80px;
+  }
+
+  .line {
+    margin: 0 5px;
   }
 }
