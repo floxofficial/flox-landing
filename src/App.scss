@@ -6,8 +6,12 @@ body {
 }
 
 .content {
-  padding-right: 203px;
-  padding-left: 203px;
+  padding-right: 216px;
+  padding-left: 216px;
+}
+
+.layout {
+  background-color: $Porcelain;
 }
 
 .colored-layout {
@@ -43,4 +47,30 @@ body {
   width: 100%;
   height: auto;
   margin-top: 73px;
+}
+
+.feature-title {
+  font-size: 32px;
+  font-weight: bold;
+  color: $MineShaft;
+  margin-top: 102px;
+  margin-bottom: 0;
+}
+
+.feature-col {
+  margin-top: 66px;
+  min-height: 250px;
+  padding: 0 35px !important;
+}
+
+.feature-col:not(:last-child) {
+  border-right: 1px solid $SecondaryAthensGray;
+}
+
+.feature-col:first-child {
+  padding-left: 15px !important;
+}
+
+.feature-col:last-child {
+  padding-right: 15px !important;
 }

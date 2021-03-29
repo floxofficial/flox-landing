@@ -1,7 +1,17 @@
-import './App.scss';
-import 'bootstrap/dist/css/bootstrap.min.css';
 import shot from 'assets/images/shot.png';
 import Header from 'Components/Header';
+import {ReactComponent as Safe} from 'assets/images/safe.svg';
+import {ReactComponent as Thunder} from 'assets/images/thunder.svg';
+import {ReactComponent as Laptop} from 'assets/images/laptop.svg';
+import Feature from './Components/Feature';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import './App.scss';
+
+const features = [
+  {title: 'Safe', desc: 'Flox is an open-source, client-side application. Your private key will not be stored anywhere.', icon: <Safe />},
+  {title: 'Accessible', desc: 'Flox is currently available for three popular operating systems, macOS, Windows, and Linux. You can install it on your PC.', icon: <Laptop />},
+  {title: 'Powerful', desc: 'With Flox, you can manage your assets in the Conflux network and perform operations such as sending and receiving tokens.', icon: <Thunder />},
+]
 
 function App() {
   return (
@@ -9,16 +19,24 @@ function App() {
       <div className="layout">
         <Header />
         <div className="content">
-          <div className="container-fluid">
-            <div className="row justify-content-center">
-              <div className="col-8 text-center">
-                <div className="header-info">Conflux wallet</div>
-                <h1 className="header-title">Powerful and simple Conflux desktop wallet</h1>
-                <p className="header-desc">Flox is an open-source desktop wallet that allows you to manage your assets on the Conflux network.</p>
-              </div>
+          <div className="row justify-content-center">
+            <div className="col-8 text-center">
+              <div className="header-info">Conflux wallet</div>
+              <h1 className="header-title">Powerful and simple Conflux desktop wallet</h1>
+              <p className="header-desc">Flox is an open-source desktop wallet that allows you to manage your assets on the Conflux network.</p>
             </div>
-            <img src={shot} className="header-shot" alt="fullet"/>
           </div>
+          <img src={shot} className="header-shot" alt="fullet"/>
+        </div>
+      </div>
+      <div className="content">
+        <h3 className="feature-title">Our features</h3>
+        <div className="row">
+          {features.map((feature, index) => (
+            <div className="col-4 feature-col" key={index}>
+              <Feature data={feature} />
+            </div>
+          ))}
         </div>
       </div>
     </>
