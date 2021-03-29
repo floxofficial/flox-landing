@@ -1,0 +1,35 @@
+@import "styles/vars";
+
+.content {
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+
+.info {
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  color: $SpunPearl;
+}
+
+.line {
+  display: block;
+  width: 1.5px;
+  height: 24px;
+  background-color: $SpunPearl;
+  margin: 0 15px;
+}
+
+.logo {
+  width: 118px;
+  height: auto;
+}
+
+.social {
+  display: flex;
+  align-items: center;
+
+  a {
+    margin-left: 24px;
+  }
+}
