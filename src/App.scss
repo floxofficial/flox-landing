@@ -47,6 +47,35 @@ body {
   width: 100%;
   height: auto;
   margin-top: 73px;
+  margin-bottom: -1px;
+}
+
+.button-group {
+  background-color: white;
+  border-radius: 4px;
+  box-shadow: 0 3px 14px 3px rgba(39, 39, 39, 0.03);
+  width: 344px;
+  height: 69px;
+  display: flex;
+  align-items: center;
+  margin-top: 42px;
+}
+
+.group-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none !important;
+  font-size: 20px;
+  font-weight: bold;
+  color: $PersianBlue;
+  width: 100%;
+  height: 100%;
+  border-left: 1px solid #e9ebee;
+}
+
+.group-link:hover {
+  color: $PersianBlue;
 }
 
 .feature-title {
@@ -127,5 +156,9 @@ footer {
 
   .header-title {
     font-size: 30px;
+  }
+
+  .button-group {
+    width: 325px;
   }
 }
