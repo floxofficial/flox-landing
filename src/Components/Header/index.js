@@ -11,7 +11,7 @@ const Header = () => {
             <Logo />
           </div>
           <div className="col-auto">
-            <button type="button" className={styles.btn}>Download</button>
+            <a href="/" className={styles.btn}>Download</a>
           </div>
         </div>
       </div>

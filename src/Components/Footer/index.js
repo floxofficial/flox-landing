@@ -5,6 +5,8 @@ import {ReactComponent as Github} from 'assets/images/github.svg';
 import styles from './styles.module.scss';
 
 const Footer = () => {
+  const githubLink = 'https://github.com/floxwallet';
+  const twitterLink = 'https://twitter.com/floxwallet';
   return (
     <div className={classNames('content', styles.content)}>
       <div className="row justify-content-between align-items-center d-md-flex d-sm-none d-none">
@@ -17,8 +19,8 @@ const Footer = () => {
         </div>
         <div className="col-auto">
           <div className={styles.social}>
-            <a href="/"><Twitter /></a>
-            <a href="/"><Github /></a>
+            <a href={twitterLink} target="_blank" rel="noreferrer"><Twitter /></a>
+            <a href={githubLink} target="_blank" rel="noreferrer"><Github /></a>
           </div>
         </div>
       </div>
@@ -26,8 +28,8 @@ const Footer = () => {
         <div className="col-auto"><Logo className={styles.logo} /></div>
         <div className="col-auto">
           <div className={styles.social}>
-            <a href="/"><Twitter /></a>
-            <a href="/"><Github /></a>
+            <a href={twitterLink} target="_blank" rel="noreferrer"><Twitter /></a>
+            <a href={githubLink} target="_blank" rel="noreferrer"><Github /></a>
           </div>
         </div>
       </div>

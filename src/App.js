@@ -6,9 +6,9 @@ import {ReactComponent as Laptop} from 'assets/images/laptop.svg';
 import Header from 'Components/Header';
 import Feature from 'Components/Feature';
 import Footer from 'Components/Footer';
+import SelectOption from 'Components/SelectOption';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.scss';
-import SelectOption from './Components/SelectOption';
 
 const features = [
   {title: 'Safe', desc: 'Flox is an open-source, client-side application. Your private key will not be stored anywhere.', icon: <Safe />},
@@ -47,7 +47,7 @@ function App() {
         <img src={shot} className="header-shot" alt="fullet"/>
       </div>
       <div className="content">
-        <h3 className="feature-title">Our features</h3>
+        <h3 className="feature-title">Flox features</h3>
         <div className="row">
           {features.map((feature, index) => (
             <div className="col-lg-4 col-md-6  col-sm-12 col-12 feature-col" key={index}>
