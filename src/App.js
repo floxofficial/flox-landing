@@ -31,9 +31,24 @@ const features = [
 ];
 
 const downloads = [
-  { label: 'MacOs', value: '1' },
-  { label: 'Windows', value: '2' },
-  { label: 'Linux', value: '3' },
+  {
+    label: 'Mac OS',
+    value: '1',
+    link:
+      'https://github.com/floxofficial/flox/releases/download/V0.0.1/flox-mac-v0.0.1.dmg',
+  },
+  {
+    label: 'Windows',
+    value: '2',
+    link:
+      'https://github.com/floxofficial/flox/releases/download/V0.0.1/flox-windows-v0.0.1.exe',
+  },
+  {
+    label: 'Linux',
+    value: '3',
+    link:
+      'https://github.com/floxofficial/flox/releases/download/V0.0.1/flox-linux-v0.0.1.deb',
+  },
 ];
 
 function App() {
@@ -57,9 +72,6 @@ function App() {
           <div className="col-auto">
             <div className="button-group">
               <SelectOption items={downloads} width={172} height={69} />
-              <a href="/" className="group-link">
-                Download
-              </a>
             </div>
           </div>
         </div>

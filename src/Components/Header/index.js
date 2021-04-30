@@ -1,5 +1,5 @@
 import classNames from 'classnames';
-import {ReactComponent as Logo} from 'assets/images/logo.svg';
+import { ReactComponent as Logo } from 'assets/images/logo.svg';
 import styles from './styles.module.scss';
 
 const Header = () => {
@@ -11,11 +11,17 @@ const Header = () => {
             <Logo />
           </div>
           <div className="col-auto">
-            <a href="/" className={styles.btn}>Download</a>
+            <a
+              href="https://github.com/floxofficial/flox/releases"
+              className={styles.btn}
+              target="_blank"
+            >
+              Download
+            </a>
           </div>
         </div>
       </div>
-      <hr className={styles.hr}/>
+      <hr className={styles.hr} />
     </>
   );
 };
