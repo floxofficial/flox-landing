@@ -12,20 +12,17 @@ import './App.scss';
 const features = [
   {
     title: 'Safe',
-    desc:
-      'Flox is an open-source, client-side application. Your private key will not be stored anywhere.',
+    desc: 'Flox is an open-source, client-side application. Your private key will not be stored anywhere.',
     icon: <Safe />,
   },
   {
     title: 'Accessible',
-    desc:
-      'Flox is currently available for three popular operating systems, macOS, Windows, and Linux. You can install it on your PC.',
+    desc: 'Flox is currently available for three popular operating systems, macOS, Windows, and Linux. You can install it on your PC.',
     icon: <Laptop />,
   },
   {
     title: 'Powerful',
-    desc:
-      'With Flox, you can manage your assets in the Conflux network and perform operations such as sending and receiving tokens.',
+    desc: 'With Flox, you can manage your assets in the Conflux network and perform operations such as sending and receiving tokens.',
     icon: <Thunder />,
   },
 ];
@@ -34,20 +31,17 @@ const downloads = [
   {
     label: 'Mac OS',
     value: '1',
-    link:
-      'https://github.com/floxofficial/flox/releases/download/V0.0.1/flox-mac-v0.0.1.dmg',
+    link: 'https://github.com/floxofficial/flox/releases/download/V0.0.2/flox-mac-v0.0.2.dmg',
   },
   {
     label: 'Windows',
     value: '2',
-    link:
-      'https://github.com/floxofficial/flox/releases/download/V0.0.1/flox-windows-v0.0.1.exe',
+    link: 'https://github.com/floxofficial/flox/releases/download/V0.0.2/flox-windows-v0.0.2.exe',
   },
   {
     label: 'Linux',
     value: '3',
-    link:
-      'https://github.com/floxofficial/flox/releases/download/V0.0.1/flox-linux-v0.0.1.deb',
+    link: 'https://github.com/floxofficial/flox/releases/download/V0.0.2/flox-linux-v0.0.2.deb',
   },
 ];
 
