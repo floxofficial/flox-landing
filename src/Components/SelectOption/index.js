@@ -10,19 +10,19 @@ const SelectOption = ({ items, height, width, setValue }) => {
     defaultItem = {
       label: 'Windows',
       value: '2',
-      link: 'https://github.com/floxofficial/flox/releases/download/V0.0.2/flox-windows-v0.0.2.exe',
+      link: 'https://github.com/floxofficial/flox/releases/download/V0.0.4/flox-windows-v0.0.4.exe',
     };
   } else if (navigator.appVersion.indexOf('Mac') !== -1) {
     defaultItem = {
       label: 'Mac OS',
       value: '1',
-      link: 'https://github.com/floxofficial/flox/releases/download/V0.0.2/flox-mac-v0.0.2.dmg',
+      link: 'https://github.com/floxofficial/flox/releases/download/V0.0.4/flox-mac-v0.0.4.dmg',
     };
   } else {
     defaultItem = {
       label: 'Linux',
       value: '3',
-      link: 'https://github.com/floxofficial/flox/releases/download/V0.0.2/flox-linux-v0.0.2.deb',
+      link: 'https://github.com/floxofficial/flox/releases/download/V0.0.4/flox-linux-v0.0.4.deb',
     };
   }
 

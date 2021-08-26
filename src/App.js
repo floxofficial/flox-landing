@@ -31,17 +31,17 @@ const downloads = [
   {
     label: 'Mac OS',
     value: '1',
-    link: 'https://github.com/floxofficial/flox/releases/download/V0.0.2/flox-mac-v0.0.2.dmg',
+    link: 'https://github.com/floxofficial/flox/releases/download/V0.0.4/flox-mac-v0.0.4.dmg',
   },
   {
     label: 'Windows',
     value: '2',
-    link: 'https://github.com/floxofficial/flox/releases/download/V0.0.2/flox-windows-v0.0.2.exe',
+    link: 'https://github.com/floxofficial/flox/releases/download/V0.0.4/flox-windows-v0.0.4.exe',
   },
   {
     label: 'Linux',
     value: '3',
-    link: 'https://github.com/floxofficial/flox/releases/download/V0.0.2/flox-linux-v0.0.2.deb',
+    link: 'https://github.com/floxofficial/flox/releases/download/V0.0.4/flox-linux-v0.0.4.deb',
   },
 ];
 
